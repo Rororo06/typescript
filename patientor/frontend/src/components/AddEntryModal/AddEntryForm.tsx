@@ -110,7 +110,8 @@ const AddEntryForm = ({ diagnoses, onCancel, onSubmit }: Props) => {
         />
         <TextField
           label="Date"
-          placeholder="YYYY-MM-DD"
+          type="date"
+          slotProps={{ inputLabel: { shrink: true } }}
           fullWidth
           sx={{ marginTop: 2 }}
           value={date}
@@ -180,7 +181,8 @@ const AddEntryForm = ({ diagnoses, onCancel, onSubmit }: Props) => {
             />
             <TextField
               label="Sick leave start"
-              placeholder="YYYY-MM-DD"
+              type="date"
+              slotProps={{ inputLabel: { shrink: true } }}
               fullWidth
               sx={{ marginTop: 2 }}
               value={sickLeaveStart}
@@ -188,7 +190,8 @@ const AddEntryForm = ({ diagnoses, onCancel, onSubmit }: Props) => {
             />
             <TextField
               label="Sick leave end"
-              placeholder="YYYY-MM-DD"
+              type="date"
+              slotProps={{ inputLabel: { shrink: true } }}
               fullWidth
               sx={{ marginTop: 2 }}
               value={sickLeaveEnd}
@@ -201,7 +204,8 @@ const AddEntryForm = ({ diagnoses, onCancel, onSubmit }: Props) => {
           <div>
             <TextField
               label="Discharge date"
-              placeholder="YYYY-MM-DD"
+              type="date"
+              slotProps={{ inputLabel: { shrink: true } }}
               fullWidth
               sx={{ marginTop: 2 }}
               value={dischargeDate}

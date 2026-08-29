@@ -64,7 +64,8 @@ const AddPatientForm = ({ onCancel, onSubmit }: Props) => {
         />
         <TextField
           label="Date of birth"
-          placeholder="YYYY-MM-DD"
+          type="date"
+          slotProps={{ inputLabel: { shrink: true } }}
           fullWidth
           value={dateOfBirth}
           onChange={({ target }) => setDateOfBirth(target.value)}
